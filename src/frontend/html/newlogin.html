@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <script>
+
+var email=document.forms['form']['username'];
+var password=document.forms['form']['password'];
+
+var username_error=document.getElementById('username_error');
+var pass_error=document.getElementById('pass_error');
+
+username.addEventListener('textInput',username_verfy);
+password.addEventListener('textInput',password_verify);
+
+function validated(){
+    if(username.value.length<9)
+    {
+        username.style.border="1px solid red";
+        username_error.style.display="block";
+        username.focus();
+        return false;
+    }
+
+    if(password.value.length<6){
+        password.style.border="1px solid red";
+        pass_error.style.display="block";
+        password.focus();
+        return false;
+    }
+
+function username_verify(){
+    if(username.value.length>=8){
+        username.style.border="1px solid sliver";
+        username_error.style.display="none";
+        return true;
+    }
+}
+
+function password_verify(){
+    if(password.value.length>=5){
+        password.style.border="1px solid sliver";
+        pass_error.style.display="none";
+        return true;
+    }
+}
+
+
+}
+    </script>
+
+
+    <div class="container" >
+        <h2>AppSpot ID Login</h2>
+        <form method="post" action="insert.php" onsubmit="return validated() && username_verify() ">
+            <div class="form-group" >
+              
+               <input type="text" id="Username" placeholder="Username" name="Uname" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" id="Password" placeholder="Password" name="password"  required>
+            </div><br>
+          
+        <a class="log" href="">Log in via SMS</a>
+    
+        <br><br>
+        <button type="submit" name="reg" onsubmit="return validated() && username_verify()">LOG IN</button>
+        <br><br>
+        <div>
+            <center> <a href="#">Register</a>&nbsp|&nbsp 
+            <a href="#">Forgot password?</a>
+            </center>
+           
+        </div>
+
+        </form>
+
+    </div> 
+    
+</body>
+   
+</html>

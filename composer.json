@@ -1,0 +1,33 @@
+# AppSpot Composer Configuration
+
+{
+    "name": "appspot/web-app",
+    "description": "AppSpot - Web Application Store",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AppSpot Team",
+            "email": "itzcheh1ru@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppSpot\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage/"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

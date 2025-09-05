@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--linking JS file-->
+    <script src="js/payment.js"></script>
+    <!--linking CSS file-->
+    <link rel="stylesheet" type="text/css" href="styles/payment.css">
+</head>
+<body>
+    <header>
+    <div class="headerContainer">
+		<div class="left">
+			<a href=""><img src="images/spot.png" type="image/png" class="logo"></a>
+			<a href="" class="title">AppSpot</a>
+		</div>	
+		<div class="center">
+			<div class="textBox">
+				<a href="" class="textClicked">Home</a>
+			</div>
+			<div class="textBox">
+				<a href="testapps.html" class="text">Apps</a>
+			</div>
+			<div class="textBox">
+				<a href="testgames.html" class="text">Games</a>
+			</div>
+			<div class="textBox">
+				<a href="testcat.html" class="text">Categories</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="search">
+				<i class="search-icon"></i>
+				<input type="text" maxlength="50" placeholder="Search apps/games">
+				<a class="clearKeyword" style="display: none;"></a>				
+			</div>
+			<div class="dropdown">
+				<a href="userAccount.html"><img src="images/login.svg" class="userIcon"></a>
+			</div>
+		</div>
+	</div>
+    </header>   
+
+
+    <div class="container">
+        <div class="left">
+            <p>Payment methods</p>
+            <hr style="border: 1px solid rgb(8, 8, 8); margin: 0.15px;">
+            <div class="methods">
+                <div style="color: rgb(24, 233, 70);">
+                    <i class="fa-solid fa-credit-card" style="color: greenyellow"></i> Payment by card 
+                </div>
+                <div id="internetBank">
+                    <i class="fa-solid fa-building-columns"></i> Internet banks 
+                </div>
+                
+                <div id = "pay">
+                    <i class="fa-solid fa-wallet"></i> Apple/Google pay
+                </div>
+                
+            </div>
+            <hr style="border: 1px solid rgb(14, 13, 13); margin: 0 15px;">
+        </div>
+        <div class="center">
+            <div class = "custom-div">
+            <img class="custom-div" alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250" height="auto"/>
+            </div>
+            <div class="card-details">
+                <form>
+                    <div class="inputBox">
+                        <span>Card Holder Name:</span>
+                        <input class="inputBox" type="text" placeholder="Mr. Amal Siripala" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Card Number:</span>
+                        <input id = "cardNumber" class="inputBox" type="text" pattern="\d{16}" placeholder="1111-2222-3333-4444"  required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Expiry Date:</span>
+                        <input class="inputBox" type="text" placeholder="MM/YY"  pattern="\d{2}/\d{2}" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input class="inputBox" type="email" placeholder="example@gmail.com" pattern="[A-Z0-9._%+-]+@[A-Z0-9._]+%.[A-Z]{2-3}" required>
+                    </div>
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox">
+                    <label for="myCheckbox">Save My Details</label>
+                    <button type="submit">PAY NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <footer class="backgroundf">
+            <center>
+                <div class="footerContainer">
+                    <a href="" target="_blank" class="lowertext1">Terms of service</a>
+                    <span class="split">|</span>
+                    <a href="" class="lowertext1" target="_blank">Privacy</a>
+                    <span class="split">|</span>
+                    <a href="" class="lowertext1" target="_blank">About cookies</a>
+                </div>
+                <div class="footercontainer2">
+                    <a href="" class="lowertext1 target="_blank">Appspot. Allrights reserved. © 2020-2024</a>
+                </div>
+            </center>
+        </footer>
+    </footer>
+</body>
+</html>

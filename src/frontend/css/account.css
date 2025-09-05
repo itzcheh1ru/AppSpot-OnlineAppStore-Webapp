@@ -1,0 +1,134 @@
+body{
+    background-color:lightcyan;
+    background-size: cover;
+    background-position: center;
+
+}
+.headerContainer{
+    border-radius: 9px;
+	min-width: 1280px;
+	height: 64px;
+	min-height: 64px;
+	background: #696363;
+	position: relative;
+	z-index: 9;
+	border-bottom: 1px solid #332929;
+}
+.headerContainer .left{
+	position: absolute;
+	left: 32px;
+	top: 12px;
+}
+.headerContainer .left .logo{
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+.headerContainer .left .title{
+	display: inline-block;
+	font-size: 20px;
+	color: #1c1818;
+	margin: 7px 8px 0;
+}
+.headerContainer .center{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 24px;
+	padding-right: 180px;
+}
+.headerContainer .center .textBox{
+	display: inherit;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	padding-right: 34px;
+	padding-left: 34px;
+}
+.headerContainer .center .textBox .text{
+	font-size: 15px;
+    color: #b8bfc7;
+}
+.headerContainer .center .textBox .textClicked{
+	color: #b8bfc7;
+	font-size: 15px;
+	font-weight: 500;
+}
+.headerContainer .right{
+	position: absolute;
+	right: 33px;
+	top: 11px;
+	display: flex;
+	align-items: center;
+}
+.search{
+	position: relative;
+	right: 100px;
+	color: #000;
+	z-index: 1;
+}
+.search .search-icon{
+	position: absolute;
+	left: 19px;
+	top: 6px;
+	width: 20px;
+	height: 20px;
+	background: url(images/search.svg) no-repeat;
+}
+.search input{
+	display: block;
+	width: 152px;
+	height: 30px;
+	background: #f2f2f2;
+	border-radius: 18px;
+	border: 1px solid #f2f2f2;
+	padding: 0 43px;
+	color: #000;
+	font-size: 14px;
+	overflow: hidden;
+	outline: none;
+}
+.headerContainer .right .userIcon{
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.m1{
+    
+    border-radius: 9px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	width :380px;
+	padding:20px ;
+}
+.A1{
+    background-color: #696363;
+    border-radius: 9px;
+	margin-bottom: 120px;
+	height: 330px;
+	width: 350px;
+	margin-left:auto;
+}
+.footerContainer{
+	margin-top: 50px;
+	padding-top: 10px;
+}
+.footercontainer2{
+	margin-top: 12px;
+}
+.lowertext1{
+	color: rgb(162, 142, 142);
+	font-size:14px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.lowertext1:hover{
+	color: #007dff;
+}
+a{
+    text-decoration: none;
+}
+

@@ -1,0 +1,1041 @@
+div{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-weight: 400;
+	vertical-align: baseline;
+}
+.headerContainer{
+	min-width: 1280px;
+	height: 64px;
+	min-height: 64px;
+	background: #fff;
+	position: relative;
+	z-index: 9;
+	border-bottom: 1px solid #f2f2f2;
+}
+.headerContainer .left{
+	position: absolute;
+	left: 32px;
+	top: 12px;
+}
+.headerContainer .left .logo{
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+.headerContainer .left .title{
+	display: inline-block;
+	font-size: 20px;
+	color: #1c1818;
+	margin: 7px 8px 0;
+}
+.headerContainer .center{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 24px;
+	padding-right: 180px;
+}
+.headerContainer .center .textBox{
+	display: inherit;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+	padding-right: 34px;
+	padding-left: 34px;
+}
+.headerContainer .center .textBox .text{
+	font-size: 15px;
+}
+.headerContainer .center .textBox .textClicked{
+	color: #007dff;
+	font-size: 15px;
+	font-weight: 500;
+}
+.headerContainer .right{
+	position: absolute;
+	right: 33px;
+	top: 11px;
+	display: flex;
+	align-items: center;
+}
+.search{
+	position: relative;
+	right: 100px;
+	color: #000;
+	z-index: 1;
+}
+.search .search-icon{
+	position: absolute;
+	left: 19px;
+	top: 6px;
+	width: 20px;
+	height: 20px;
+	background: url(images/search.svg) no-repeat;
+}
+.search input{
+	display: block;
+	width: 152px;
+	height: 30px;
+	background: #f2f2f2;
+	border-radius: 18px;
+	border: 1px solid #f2f2f2;
+	padding: 0 43px;
+	color: #000;
+	font-size: 14px;
+	overflow: hidden;
+	outline: none;
+}
+.search .clearKeyword{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -9px;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+}
+.headerContainer .right .userIcon{
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+}
+
+.tab{
+	width: 968px;
+	height:auto;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.tab .el-row{
+	display: flex;
+	align-items: flex-start;
+}
+.el-row .sub-categories{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.el-col-22{
+	width: 90%;
+}
+.el-col-24{
+	width: 100%;
+}
+.tab .el-col-22{
+	flex: 0 1 auto;
+}
+.childtab{
+	display: inline-block;
+	padding-right: 24px;
+	padding-bottom: 12px;
+	cursor: pointer;
+}
+.textClicked{
+	font-size: 14px;
+	color: blue;
+}
+.text{
+	font-size: 14px;
+	color: #000;
+	opacity: .9;
+	font-weight: 400;
+}
+
+
+.app {
+    display: inline-block;
+	position: relative;
+    padding: 10px;
+}
+.install-popup {
+	position: absolute; /* Make the popup absolute */
+	bottom: 100%; /* Position it below the logo */
+	left: 50%; /* Center it horizontally */
+	transform: translateX(-50%); /* Center it exactly */
+	background-color: #fff; /* Set background color */
+	padding: 10px; /* Add padding */
+	border: 1px solid #ddd; /* Add a border */
+	display: none; /* Hide the popup initially */
+  }
+.item:hover .installPopup{
+	display: block;
+}
+.horizonhomecard .mask{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	z-index: 0.9;
+}
+
+.categoryapps{
+	display: block;
+	margin: 25px auto 0;
+	width: 970px;
+}
+.categoryapps .bottom{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.subcatitle{
+	display: inline-block;
+	width: 100%;
+	height: 28px;
+	font-size: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.categoryapps .bottom .item{
+	display: flex;
+	flex-direction: row;
+	padding: 15px 0;
+	margin-top: 10px;
+	width: 50%;
+	cursor: pointer;
+}
+.categoryapps .bottom .item .img{
+	width: 72px;
+	height: 72px;
+}
+.categoryapps .bottom .item .div{
+	display: flex;
+	width: 384px;
+	margin-left: 24px;
+	margin-bottom: -15px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.categoryapps .bottom .item .div .right{
+	padding: 5px 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.categoryapps .bottom .item .div .right .labelbox{
+	width: 276px;
+	font-size: 13px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-left: 15px;
+}
+.categoryapps .bottom .item .div .right .labelbox div .name{
+	color: #000;
+	display: block;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-bottom: 4px;
+}
+.categoryapps .bottom .item .div .right .labelbox div .text{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5px;
+}
+.categoryapps .bottom .item .div .right .labelbox div .text span{
+	display: inline-block;
+	padding: 0 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #6d6d6d;
+}
+.categoryapps .bottom .item .div .right .labelbox div .detail{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #6d6d6d;
+}
+.categoryapps .bottom .item .button1{
+	max-width: 182px;
+	width: auto;
+	min-width: 72px;
+	height: 28px;
+	margin-top: 22px;
+	font-size: 14px;
+	border-radius: 14px;
+	color: #007dff;
+	border: 0;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: -10px;
+}
+.categoryapps .bottom .item .button1:hover{
+	background-color:#d6d5db;
+}
+
+
+.horizonhomecard{
+	position: relative;
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	margin: 24px auto 0;
+	width: 100%;
+	max-width: 968px;
+}
+.horizonhomecard .top{
+	display: -webkit-box;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.horizonhomecard .top .left{
+	display:inline-block;
+	width: 80%;
+	height:28px;
+	font-size:20px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.horizonhomecard .top .right{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	opacity: .6;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.horizonhomecard .top .right .arrow{
+	width: 16px;
+	height: 16px;
+}
+.horizonhomecard .bottom{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	height: 150px;
+	margin-top: 24px;
+	padding-bottom:10px;
+	border-bottom: 1px solid #f2f2f2;
+	overflow: visible
+}
+.horizonhomecard .bottom .item{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 130px;
+	align-items: center;
+}
+.horizonhomecard .bottom .item>div{
+	width:72px;
+	text-align: center;
+}
+.horizonhomecard .bottom .item>div .img{
+	width: 72px;
+	height: 72px;
+	border-radius: 12px;
+}
+.horizonhomecard .bottom .item .label{
+	width: 72px;
+	position: relative;
+	display: inline-block;
+	height: 36px;
+	line-height: 18px;
+	font-size: 13px;
+	color: black;
+	text-align: center;
+	margin: 5px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.horizonhomecard .bottom .item .rating{
+	margin-top: -23px;
+	padding-right: 20px;
+}
+.horizonhomecard .bottom .item .rating{
+	font-size: 14px;
+	color: #454444;
+}
+.horizonhomecard .bottom .item .buton{
+	position: absolute;
+	left: 50%;
+	top: 125px;
+	transform: translate(-50%);
+	display: none;
+	min-width: 72px;
+	height:28px;
+	padding: 0 12px;
+	font-size: 14px;
+	border-radius: 14px;
+	color: #0a59f7;
+	background: rgba(0, 0, 0, .05);
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.horizonhomecard .bottom .item .buton div{
+	width: auto;
+	max-width: 160px;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#normalcard{
+	margin:24px auto 0;
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	width:968px;
+}
+
+#normalcard .top{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+#normalcard .top .left{
+	font-size:20px;
+	display:inline-block;
+	height:28px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.hwtext{
+	font-family: HWtext-65ST;
+	font-weight: bold;
+}
+#normalcard .top .right{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	opacity: .6;
+	font-size: 14px;
+	cursor: pointer;
+}
+#normalcard .top .right .arrow{
+	width: 16px;
+	height: 16px;
+}
+#normalcard .bottom{
+	margin-top: 7px;
+	padding-bottom:10px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+#normalcard .bottom .bottom{
+	border-bottom:1px solid #f2f2f2;
+}
+#normalcard .bottom>.item-normal:nth-child(odd){
+	margin-right: 56px;
+}
+#normalcard .bottom .item{
+	display:flex;
+	flex-direction: row;
+	padding: 15px 0;
+	width: 456px;
+}
+#normalcard .bottom .item .img{
+	margin-right: 24px;
+	width: 72px;
+	height:72px;
+
+}
+#normalcard .bottom .item .div{
+	width: 360px;
+	display:flex;
+	margin-bottom: -15px;
+	border-bottom:1px solid #f2f2f2;
+}
+#normalcard .bottom .item .div .right{
+	width: 280px;
+	padding: 5px;
+	margin-left: 90px;
+	margin-top: -80px;
+	flex: 1;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#normalcard .bottom .item .div .right .labelbox{
+	font-size: 13px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#normalcard .bottom .item .div .right .labelbox div .name{
+	color: #000;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#normalcard .bottom .item .div .right .labelbox div .text{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+.newStarBox{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#normalcard .bottom .item .div .right .labelbox div .text span{
+	display: inline-block;
+	padding: 0 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #6d6d6d;
+}
+#normalcard .bottom .item .div .right .labelbox div .detail{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #6d6d6d;
+}
+#normalcard .bottom .item .div .button1{
+	max-width: 100px;
+	padding: 0 12px;
+	background-color:rgb(230, 234, 238);
+	z-index: 1;
+	width: auto;
+	min-width: 72px;
+	height: 28px;
+	margin-top: 22px;
+	font-size: 14px;
+	border-radius:14px;
+	color: #007dff;
+	border: 0;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+	transition: background-color 0.3s ease;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.app img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.app-name {
+    margin: 0;
+    flex: 1; /* This will allow the app name to take up remaining space */
+    text-align: left; /* Align the app name to the left */
+    display: flex;
+    align-items: center; /* Vertically center the app name */
+	width:100px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.app-link {
+    text-decoration: none;/* Remove underline from the link */
+}
+
+.app-link:hover {
+	display: block;
+	block-size: 120px;
+	background-color: aliceblue;
+     /* Reduce opacity on hover for visual feedback */
+}
+.app-link2 {
+    text-decoration: none;/* Remove underline from the link */
+}
+.app-link2:hover {
+    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+}
+.item:hover{
+	display: block;
+	background-color: aliceblue;
+}
+#normalcard .bottom .item .div .button1:hover{
+	background-color:#d6d5db;
+}
+.box{
+    width: 968px;
+    height:100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.detailcard{
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: -1px;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-logo{
+    width: 115px;
+}
+.info{
+    height: 115px;
+    box-sizing: border-bx;
+    padding: 8px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+font-size: #000;
+margin-bottom: 4px;
+}
+
+.det{
+    padding: 10px;
+}
+.backgroundf{
+	display: block;
+	background-color:rgb(232, 237, 241);
+	width:100%;
+	height: 80px;
+}
+.footerContainer{
+	margin-top: 50px;
+	padding-top: 10px;
+}
+.footercontainer2{
+	margin-top: 12px;
+}
+.lowertext1{
+	color: rgb(115, 108, 108);
+	font-size:14px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.lowertext1:hover{
+	color: #007dff;
+}
+
+.appbox{
+	position: relative;
+	flex: 1 1 auto;
+}
+.appdetails{
+	width: 968px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.appdetails .topcontainer{
+	width: 100%;
+}
+
+.topcard{
+	width: 100%;
+	height: 112px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	margin-top: -1px;
+	max-width: 968px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.topcard .imgleft{
+	width: 112px;
+	height: 112px;
+}
+
+.topcard .center_info{
+	flex: 1;
+	height: 112px;
+	box-sizing:border-box;
+	padding: 8px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.topcard .center_info .title{
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 4px;
+}
+.topcard .center_info .tip{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #000;
+	opacity: .4;
+}
+.topcard .center_info .tip .tip_item{
+	display: flex;
+	align-items: center;
+}
+.topcard .center_info .tip .tip_item .circle{
+	width: 2px;
+	height: 2px;
+	border-radius: 1.5px;
+	background-color: #000;
+	margin: 0 8px;
+}
+.topcard .center_info .bottom_info{
+	flex: 1;
+	opacity: 0.6;
+	font-size: 14px;
+	color: #000;
+	display: flex;
+	align-items: flex-end;
+}
+.topcard .center_info .bottom_info .score{
+	display: flex;
+	align-items: center;
+	margin: 0 3px;
+}
+.topcard .center_info .bottom_info .score .starBox_pos{
+	display: flex;
+	align-items: center;
+	margin: 0 5px;
+}
+.topcard .center_info .bottom_info .downloads{
+	margin: 0 15px;
+	display: flex;
+	align-items: center;
+}
+.topcard .center_info .bottom_info .grade{
+	display: flex;
+	align-items: center;
+	margin: 0 2.5px;
+}
+
+.topcard .right_install{
+	width: auto;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 18px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0 15px;
+}
+.topcard .right_install .install_text{
+	min-width: 112px;
+	max-width: 182px;
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 18px;
+	background-color: #007dff;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+.screenshots{
+	width: 968px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.screenshots .scrimg{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.screenshots .scrimg .imgsize{
+	width: 200px;
+	height: auto;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-right: 32px;
+}
+.introcard{
+	display: flex;
+	flex-direction: column;
+	width: 968px;
+	height: 100%;
+	border: 1px solid #007dff;
+	margin: 30px auto;
+}
+.introcard .introtitle{
+	width:114px;
+	margin: 5px;
+	border-bottom: 1px solid black;
+}
+.introcard .introtitle .introtitletxt{
+	color: #000;
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.introcard .intro{
+	margin-top: 5px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+}
+.introcard .intro .introtxt{
+	color: #000;
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reviewcard{
+	width: 100%;
+	padding: 20px 0;
+	margin-top: -1px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	max-width: 968px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.reviewcard .header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.reviewcard .header .title{
+	font-size: 20px;
+	color: #000;
+}
+.reviewcard .header .more{
+	opacity: .6;
+	font-size: 14px;
+	color: #000;
+	text-align: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.reviewcard .header .more .arrow{
+	width: 16px;
+	height: 16px;
+}
+.reviewcard .rate{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.reviewcard .rate .rate_left .rvalue{
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 60px;
+	color: #191919;
+}
+.reviewcard .rate .rate_left .users{
+	width: 80px;
+	line-height: 17px;
+	opacity: .4;
+	font-size: 12px;
+	color: #000;
+}
+.submitbtn{
+	margin-top: 20px;
+}
+.reviewcard .rate .rate_left{
+	display: block;
+}
+.reviewcard .rate .rate_right{
+	flex: 1;
+	height: 85px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+.reviewcard .rate .rate_right .star{
+	width: 350px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.reviewcard .rate .rate_right .star .starBox{
+	width: 90px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.reviewcard .rate .rate_right .star .starBox img{
+	margin: 0 1px;
+	width: 15px;
+}
+.reviewcard .rate .rate_right .star .progressBar{
+	width: 265px;
+}
+.progressBar{
+	height: 4px;
+	border-radius: 2px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+}
+.progressBar .fill{
+	width: 50%;
+	height: 4px;
+	background: #8f8f8f;
+	border-radius: 3px;
+}
+.progressBar .empty{
+	width: 50%;
+	height: 4px;
+	background: #dfdfdf;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.aboutcard{
+	width: 100%;
+	padding: 20px 0;
+	margin-top: -1px;
+	border-top: 1px solid #f2f2f2;
+	max-width: 968px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.aboutcard .title{
+	font-size: 20px;
+	color: #000;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.aboutcard .detailInfo{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.aboutcard .detailInfo .left{
+	width: 456px;
+}
+.aboutcard .detailInfo .left .appSingleInfo{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #f2f2f2;
+	box-sizing: border-box;
+	padding: 0 5px;
+	white-space: nowrap;
+}
+.aboutcard .detailInfo .left .appSingleInfo .info_key{
+	opacity: .8;
+	font-size: 14px;
+	color: #000;
+}
+.aboutcard .detailInfo .left .appSingleInfo .info_value{
+	display: inline-block;
+	opacity: .6;
+	font-size: 14px;
+	color: #000;
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+	padding-left: 25px;
+}
+.aboutcard .detailInfo .right{
+	width: 456px;
+}
+.aboutcard .detailInfo .right .appSingleInfo{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #f2f2f2;
+	box-sizing: border-box;
+	padding: 0 5px;
+	white-space: nowrap;
+}
+.aboutcard .detailInfo .right .appSingleInfo .info_key{
+	opacity: .8;
+	font-size: 14px;
+	color: #000;
+}
+.aboutcard .detailInfo .right .appSingleInfo .info_value{
+	display: inline-block;
+	opacity: .6;
+	font-size: 14px;
+	color: #000;
+	text-align: right;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+	padding-left: 25px;
+}
+
+.center_thank{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.center_thank .top_text{
+	font-size: 35px;
+}
+.center_thank .bottom_text{
+	font-size: 16px;
+}
+
+
+
+
+

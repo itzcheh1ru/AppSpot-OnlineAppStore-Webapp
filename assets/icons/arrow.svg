@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_more</title>
+    <defs>
+        <path d="M48.5857864,0.585786438 C49.366835,-0.195262146 50.633165,-0.195262146 51.4142136,0.585786438 C52.1952621,1.36683502 52.1952621,2.63316498 51.4142136,3.41421356 L27.4142136,27.4142136 C26.633165,28.1952621 25.366835,28.1952621 24.5857864,27.4142136 L0.585786438,3.41421356 C-0.195262146,2.63316498 -0.195262146,1.36683502 0.585786438,0.585786438 C1.36683502,-0.195262146 2.63316498,-0.195262146 3.41421356,0.585786438 L26,23.1715729 L48.5857864,0.585786438 Z" id="path-1"></path>
+    </defs>
+    <!-- <g id="ic_more" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.379999995"> -->
+    <g id="ic_more" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Group" transform="translate(18.000000, 61.000000) rotate(-90)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Path-45" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <rect id="color/#000000" fill="#000000" mask="url(#mask-2)" x="-6" y="-20" width="64" height="64"></rect>
+        </g>
+    </g>
+</svg>

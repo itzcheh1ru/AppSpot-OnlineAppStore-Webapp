@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Account</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<img class="logo" src="images/spot.png" alt="app" width="50" height="50px">
+<h1 style="text-align: center;">User Account</h1><br>
+<fieldset class="m1">
+	<fieldset class="A1">
+		<h2 id="A1.1">Account Information</h2>
+		<form>
+		Username
+			<input type="text" name="username" placeholder="user name" required><br/><br/>
+		Firstname
+			<input type="text" name="firstname" placeholder="First Name" required><br/><br/>
+		Lastname
+			<input type="text" name="lastname" placeholder="Last Name" required><br/><br/>
+	 	 Phone Number
+			<input type="phone" name="mobile" placeholder="0777777777" pattern="[0-9]{10}" required> <br/><br/>
+		E-mail
+			<input type="email" name="email" placeholder="ABC@gmail.com" pattern="[A-Z0-9._%+-]+@[A-Z0-9._]+%.[A-Z]{2-3}" required> <br/><br>
+			<center>
+				<input type="submit" value="submit">
+			</center>
+		</form>
+	</fieldset><br>
+
+	<fieldset class="user">
+		<center>
+		<img class="profile" src="images/profile.svg" alt="Prfile cover" width="200px" height="200px"/> <br>
+		<h2 id=A3.1>Date of birth</h2>
+		<input type="date" name="dob" required><br/><br/>
+		<h2>Gender</h2>
+		<input type="radio" value="Female" name="Gender">Female <br/><br/>
+		<input type="radio" value="Male" name="Gender">Male <br/><br/>
+		</center>
+	</fieldset>
+</fieldset>
+</body>
+</html>
+

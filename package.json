@@ -1,0 +1,38 @@
+# AppSpot Package.json
+
+{
+  "name": "appspot",
+  "version": "1.0.0",
+  "description": "Web-based application store platform",
+  "main": "src/frontend/html/index.html",
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "test": "phpunit tests/",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/css/app.min.css src/frontend/css/*.css",
+    "minify-js": "uglifyjs src/frontend/js/*.js -o dist/js/app.min.js"
+  },
+  "keywords": [
+    "app-store",
+    "web-application",
+    "php",
+    "mysql",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "AppSpot Team",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itzcheh1ru/appspot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itzcheh1ru/appspot/issues"
+  },
+  "homepage": "https://github.com/itzcheh1ru/appspot#readme"
+}

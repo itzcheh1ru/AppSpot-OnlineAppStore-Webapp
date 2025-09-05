@@ -1,0 +1,42 @@
+a 
+{
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p
+{
+    line-height:1.5
+}
+
+.footerContainer
+{
+	margin-top: 50px;
+	padding-top: 10px;
+}
+
+.footercontainer2
+
+{
+	margin-top: 12px;
+}
+
+.lowertext1
+{
+	color: rgb(115, 108, 108);
+	font-size:14px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.lowertext1:hover
+{
+	color: #007dff;
+}
