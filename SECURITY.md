@@ -73,11 +73,12 @@ We regularly release security updates. Please:
 ## Contact
 
 For security-related questions or concerns:
-- **Email**: itzcheh1ru@gmail.com
+- **Email**: thisayuruhirusha@gmail.com
 - **Response Time**: Within 48 hours
 - **Encryption**: PGP key available upon request
 
 ---
 
 *Last updated: January 2024*
+
 
