@@ -15,7 +15,7 @@ We take security seriously. If you discover a security vulnerability, please fol
 Security vulnerabilities should be reported privately to avoid exposing users to potential risks.
 
 ### 2. Email us directly
-Send details to: **itzcheh1ru@gmail.com**
+Send details to: **thisayuruhirusha@gmail.com**
 
 Include the following information:
 - Description of the vulnerability
@@ -80,3 +80,4 @@ For security-related questions or concerns:
 ---
 
 *Last updated: January 2024*
+
